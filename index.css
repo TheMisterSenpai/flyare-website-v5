@@ -4,6 +4,10 @@
 }
 
 @font-face {
+    font-family: "Ginto";
+    src: url(Ginto-Black.ttf);
+}
+@font-face {
     font-family: "Whitney";
     src: url(Whitney-Medium.ttf);
 }
@@ -50,6 +54,7 @@ a, button {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .greeting-emoji {
@@ -70,7 +75,7 @@ a, button {
 
 .title {
     margin-top: 20px;
-    font-family: "Ginto Nord";
+    font-family: "Ginto";
     text-align: center;
     font-size: 25px;
 }
@@ -84,8 +89,7 @@ a, button {
 
 
 .link-btn {
-    margin: 15px;
-    background-color: #5865F2;
+    margin: 10px 15px;
     font-size: 17px;
     display: flex;
     align-items: center;
@@ -97,15 +101,27 @@ a, button {
     transition: .16s ease;
     user-select: none;
 }
+.btn-blue {
+    background-color: #5865F2;
+}
+.btn-green {
+    background-color: #2D7D46;
+}
+.btn-green:hover {
+    background-color: #215B32;
+}
 
+.btn-green:active {
+    background-color: #1E532E;
+}
 .btn-icon {
     font-size: 20px;
     margin-right: 7px;
 }
-.link-btn:hover {
+.btn-blue:hover {
     background: hsl(235,calc(1*51.4%),52.4%);;
 }
-.link-btn:active {
+.btn-blue:active {
     background: hsl(235,calc(1*46.7%),44.1%);
 }
 
@@ -123,7 +139,7 @@ a, button {
     border-radius: 10px;
     background-color: #25272b;
     width: 300px;
-    height: 340px;
+
     margin: 10px;
 }
 
@@ -180,7 +196,7 @@ a, button {
 
 footer {
     text-align: center;
-    font-family: "Ginto Nord";
+    font-family: "Ginto";
 }
 
 footer a {
@@ -199,4 +215,14 @@ footer a:hover {
     footer a {
         font-size: 20px;
     }
+}
+
+::-webkit-scrollbar {
+    background-color: #2F3136;
+    width: 17px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #5865F2;
+    border-radius: 10px;
+    border: 5px solid #2F3136;
 }
