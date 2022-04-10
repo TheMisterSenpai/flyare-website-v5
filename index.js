@@ -8,9 +8,33 @@ Vue.createApp({
         returnGif() {
             let greeting = document.getElementById("greeting-text")
             if (greeting.innerText == "Hi, I am flyarrree") {
-                this.main = '<img src="https://sqdsh.top/static/wow.gif">'
+                this.main = '<img class="vay-ogo" src="https://sqdsh.top/static/wow.gif">'
             }
     } 
     }
 
 }).mount("#vue-app")
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const followCursor = () => { 
+      const el = document.querySelector('.follow-cursor') 
+  
+      window.addEventListener('mousemove', e => { 
+        const target = e.target 
+        if (!target) return
+  
+        if (target.closest('a')) { 
+          el.classList.add('follow-cursor_active') 
+        } else { // иначе
+          el.classList.remove('follow-cursor_active') 
+        }
+  
+        el.style.left = e.pageX + 'px' 
+        el.style.top = e.pageY + 'px' 
+      })
+    }
+  
+    followCursor() 
+  
+  })
