@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "Ginto Nord";
+    src: url(Ginto-Nord-Black.ttf);
+}
+
+@font-face {
+    font-family: "Whitney";
+    src: url(Whitney-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(HelveticaNeueCyr-Roman.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #36393F, #2F3136);
+    color: rgb(212, 212, 212);
+    font-family: "Whitney", "Helvetica";
+    font-size: 17px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: "Ginto Nord";
+}
+
+a, button {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+.container {
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting-emoji {
+    width: 70px;
+    margin-right: 15px;
+    border-radius: 15px;
+}
+
+.greeting-b {
+    background: linear-gradient(to right, #FF4343, #FF3D9A, #C242FF, #349EFF);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.text {
+    letter-spacing: 2px;
+}
+
+.title {
+    margin-top: 20px;
+    font-family: "Ginto Nord";
+    text-align: center;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.link-btn {
+    margin: 15px;
+    background-color: #5865F2;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    transition: .16s ease;
+    user-select: none;
+}
+
+.btn-icon {
+    font-size: 20px;
+    margin-right: 7px;
+}
+.link-btn:hover {
+    background: hsl(235,calc(1*51.4%),52.4%);;
+}
+.link-btn:active {
+    background: hsl(235,calc(1*46.7%),44.1%);
+}
+
+.projects {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #25272b;
+    width: 300px;
+
+    margin: 10px;
+}
+
+.project-logo {
+    width: 100px; 
+    border-radius: 100%;
+}
+
+.project-title {
+    margin: 10px 0;
+    font-size: 25px;
+    color: #5865F2;
+}
+
+.project a {
+    text-align: center;
+    margin: 10px auto;
+}
+
+@media (max-width: 1070px) {
+    .greeting {
+        font-size: 25px;
+    }
+    .greeting-emoji {
+        width: 50px;
+    }
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:570px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width:460px) {
+    .container {
+        width: 90%;
+    }
+    .greeting {
+        font-size: 20px;
+    }
+
+    
+}
+
+@media (max-width:330px) {
+    .greeting {
+        font-size: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    font-family: "Ginto Nord";
+}
+
+footer a {
+    font-size: 25px;
+    color: #5865F2;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:475px) {
+    footer h2 {
+        font-size: 20px;
+    }
+    footer a {
+        font-size: 20px;
+    }
+}
