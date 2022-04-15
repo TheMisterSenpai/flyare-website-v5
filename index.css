@@ -1,3 +1,9 @@
+:root {
+    --text-color: rgb(212, 212, 212);
+    --background-color: #2F3136;
+    --card-color: rgb(0, 0, 0, 0.1);
+    --server-color: #25272b;
+}
 @font-face {
     font-family: "Ginto Nord";
     src: url(Ginto-Nord-Black.ttf);
@@ -20,8 +26,8 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #36393F, #2F3136);
-    color: rgb(212, 212, 212);
+    background: var(--background-color);
+    color: var(--text-color);
     font-family: "Whitney", "Helvetica";
     font-size: 17px;
 }
@@ -40,7 +46,7 @@ a, button {
     border: 0;
     outline: 0;
     cursor: pointer;
-    color: white;
+    color: var(--text-color);
     font-size: 17px;
 }
 .container {
@@ -48,7 +54,7 @@ a, button {
     margin: 20px auto;
     border-radius: 20px;
     padding: 50px;
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color: var(--card-color);
     box-shadow: 0 0 10px #16171a;
 }
 .greeting {
@@ -101,10 +107,13 @@ a, button {
     color: white;
     transition: .16s ease;
     user-select: none;
+    box-shadow: 0 3px 8px rgb(0, 0, 0, 0.5);
 }
-.btn-blue {
-    background-color: #5865F2;
+
+.link-btn:hover {
+        box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
 }
+
 .btn-green {
     background-color: #2D7D46;
 }
@@ -115,15 +124,65 @@ a, button {
 .btn-green:active {
     background-color: #1E532E;
 }
+
+.btn-yoomoney {
+    background-color: #8b3ffd;
+}
+.btn-yoomoney:hover {
+    background-color: #7034ca;
+}
+
+.btn-yoomoney:active {
+    background-color: #56279c;
+}
+
+.btn-git {
+    background-color: #171515;
+}
+.btn-git:hover {
+    background-color: #080808;
+}
+
+.btn-git:active {
+    background-color: #000000;
+}
+
+.btn-tg {
+    background-color: #0088cc;
+}
+.btn-tg:hover {
+    background-color: #006ba0;
+}
+
+.btn-tg:active {
+    background-color: #005885;
+}
+
+.btn-ru {
+    background-color: #ff7f50;
+}
+.btn-ru:hover {
+    background-color: #d86034;
+}
+
+.btn-ru:active {
+    background-color: #bd4f27;
+}
+
+.btn-blurple {
+    background-color: #5865F2;
+}
+
+.btn-blurple:hover {
+    background: hsl(235,calc(1*51.4%),52.4%);;
+}
+.btn-blurple:active {
+    background: hsl(235,calc(1*46.7%),44.1%);
+}
+
 .btn-icon {
     font-size: 20px;
     margin-right: 7px;
-}
-.btn-blue:hover {
-    background: hsl(235,calc(1*51.4%),52.4%);;
-}
-.btn-blue:active {
-    background: hsl(235,calc(1*46.7%),44.1%);
 }
 
 .projects {
@@ -138,7 +197,7 @@ a, button {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    background-color: #25272b;
+    background-color: var(--server-color);
     width: 300px;
 
     margin: 10px;
@@ -219,37 +278,28 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar {
-    background-color: #2F3136;
+    background-color: var(--background-color);
     width: 17px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #5865F2;
     border-radius: 10px;
-    border: 5px solid #2F3136;
+    border: 5px solid var(--background-color);
 }
 
 .vay-ogo {
     width: auto;
 }
 
-.follow-cursor {
-    display: block;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 0 20px #C242FF;
-    background: rgb(195, 66, 255, 0.2);
-    border-radius: 50%;
-    transform: translateY(-50%) translateX(-50%); 
-    position: absolute; 
-    z-index: 999; 
-    pointer-events: none; 
-    transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
-  }
-  
-
-  .follow-cursor_active {
-    height: 60px;
-    width: 60px;
-
-
-  }
+.setTheme {
+    cursor: pointer;
+    font-size: 45px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 10%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--server-color);
+}

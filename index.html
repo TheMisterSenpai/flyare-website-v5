@@ -9,31 +9,32 @@
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" class="">
     <title>flyare</title>
 </head>
-<body v-cloak>
+<body>
     <div class="container" id="vue-app">
         <h1 class="greeting" @click="returnGif" v-html="main"></h1>
+        <div class="setTheme" @click="setTheme" v-html="themeIcon"></div>
         <h2 class="title">Links</h2>
         <div class="links">
-            <a href="https://discord.com/users/561813937352343572" class="link-btn btn-blue">
+            <a href="https://discord.com/users/561813937352343572" class="link-btn btn-blurple">
                 <i class="fa-brands fa-discord btn-icon"></i>
                 <div class="btn-text">Discord</div>
             </a>
-            <a href="https://me.shuoki.top/donate" class="link-btn btn-blue">
+            <a href="https://me.shuoki.top/donate" class="link-btn btn-yoomoney">
                 <svg class="btn-icon" width="30" height="100" viewBox="0 0 423 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M272.49 0C189.05 0 122 67.5 122 150C122 233.18 189.71 300 272.47 300C355.23 300 423 232.5 423 150C423 67.5 355.25 0 272.49 0ZM272.49 205.91C241.71 205.91 216.41 180.68 216.41 150C216.41 119.32 241.71 94.09 272.49 94.09C303.27 94.09 328.58 119.32 328.58 150C327.89 180.68 303.27 205.91 272.49 205.91Z" fill="white"/>
                     <path d="M122 43.58V261.76H68.68L0.280029 43.58H122Z" fill="white"/>
                 </svg>
                 <div class="btn-text">Donate</div>
             </a>
-            <a href="https://github.com/flyare1337" class="link-btn btn-green">
+            <a href="https://github.com/flyare1337" class="link-btn btn-git">
                 <i class="fa-brands fa-github btn-icon"></i>
                 <div class="btn-text">GitHub</div>
             </a>
-            <a href="https://t.me/flyaree" class="link-btn btn-blue">
+            <a href="https://t.me/flyaree" class="link-btn btn-tg">
                 <i class="fa-brands fa-telegram btn-icon"></i>
                 <div class="btn-text">Telegram</div>
             </a>
-            <a href="https://bcord.cc/ru-speaking" class="link-btn btn-green">
+            <a href="https://bcord.cc/ru-speaking" class="link-btn btn-ru">
                 <svg class="btn-icon" width="27" height="27" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M35.4554 168.27C35.4554 158.493 27.5186 150.568 17.7277 150.568C7.93678 150.568 0 158.493 0 168.27V292.184C0 301.962 7.93678 309.887 17.7277 309.887C27.5186 309.887 35.4554 301.962 35.4554 292.184V168.27Z" fill="white"/>
                     <path d="M106.826 129.607C106.826 119.823 98.8897 111.891 89.0988 111.891C79.3079 111.891 71.3711 119.823 71.3711 129.607V330.391C71.3711 340.175 79.3079 348.106 89.0988 348.106C98.8897 348.106 106.826 340.175 106.826 330.391V129.607Z" fill="white"/>
@@ -54,7 +55,7 @@
                     <div class="project-title">Riders of Darkness</div>
                     <div class="project-text">Discord сервер по общению и времяпровождению. Иногда проходят игры в голосовых каналах.</div>
                 </div>
-                <a href="https://shuoki.top" class="link-btn btn-blue">
+                <a href="https://shuoki.top" class="link-btn btn-blurple">
                     <i class="fa-solid fa-door-open btn-icon"></i>
                     <div class="btn-text">Перейти</div>
                 </a>
@@ -65,7 +66,7 @@
                     <div class="project-title">Brawl Stars RU</div>
                     <div class="project-text">RU сервер по Brawl Stars. Заходи, чтобы найти тиммейтов для игры и приятно провести время в кругу адекватных участников.</div>
                 </div>
-                <a href="https://shuoki.top" class="link-btn btn-blue">
+                <a href="https://shuoki.top" class="link-btn btn-blurple">
                     <i class="fa-solid fa-door-open btn-icon"></i>
                     <div class="btn-text">Перейти</div>
                 </a>
@@ -76,7 +77,7 @@
                     <div class="project-title">Shuoki</div>
                     <div class="project-text">Команда, которая разрабатывает Open-Source проекты. В скором времени будет свой сайт по сокращению ссылок.</div>
                 </div>
-                <a href="https://shuoki.top" class="link-btn btn-blue">
+                <a href="https://shuoki.top" class="link-btn btn-blurple">
                     <i class="fa-solid fa-door-open btn-icon"></i>
                     <div class="btn-text">Перейти</div>
                 </a>
@@ -86,7 +87,6 @@
             <h2 class="">View Source Code on <a href="https://github.com/flyare1337/flyare-website-v5" class="">GitHub</a></h2>
         </footer>
     </div>
-    <div class="follow-cursor"></div>
     <script src="https://unpkg.com/vue@next"></script>
     <script async="" src="index.js"></script>
 </body>
