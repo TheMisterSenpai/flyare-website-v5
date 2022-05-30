@@ -3,6 +3,7 @@
     --background-color: #2F3136;
     --card-color: rgb(0, 0, 0, 0.1);
     --server-color: #25272b;
+    --bx-shdw: 0 0 10px #16171a;
 }
 @font-face {
     font-family: "Ginto Nord";
@@ -50,12 +51,12 @@ a, button {
     font-size: 17px;
 }
 .container {
-    width: 70%;
+    max-width: 950px;
     margin: 20px auto;
     border-radius: 20px;
     padding: 50px;
     background-color: var(--card-color);
-    box-shadow: 0 0 10px #16171a;
+    box-shadow: var(--bx-shdw);
 }
 .greeting {
     display: flex;
@@ -107,12 +108,9 @@ a, button {
     color: white;
     transition: .16s ease;
     user-select: none;
-    box-shadow: 0 3px 8px rgb(0, 0, 0, 0.5);
+
 }
 
-.link-btn:hover {
-        box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
-}
 
 .btn-green {
     background-color: #2D7D46;
@@ -212,6 +210,7 @@ a, button {
     margin: 10px 0;
     font-size: 25px;
     color: #5865F2;
+    font-family: "Ginto";
 }
 
 .project a {
