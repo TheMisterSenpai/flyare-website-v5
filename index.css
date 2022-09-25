@@ -1,6 +1,6 @@
 :root {
     --text-color: rgb(212, 212, 212);
-    --background-color: #2F3136;
+    --background-color: #101216;
     --card-color: rgb(0, 0, 0, 0.1);
     --server-color: #25272b;
     --bx-shdw: 0 0 10px #16171a;
@@ -53,10 +53,11 @@ a, button {
 .container {
     max-width: 950px;
     margin: 20px auto;
-    border-radius: 20px;
+    padding: 50px;
+    /* border-radius: 20px;
     padding: 50px;
     background-color: var(--card-color);
-    box-shadow: var(--bx-shdw);
+    box-shadow: var(--bx-shdw); */
 }
 .greeting {
     display: flex;
@@ -75,6 +76,23 @@ a, button {
     background: linear-gradient(to right, #FF4343, #FF3D9A, #C242FF, #349EFF);
     color: transparent;
     -webkit-background-clip: text;
+}
+
+.attention {
+    font-size: 19px;
+    padding: 20px;
+    /* text-align: center; */
+    background-color: rgb(255, 209, 59, 0.2);
+    border: 2px solid #ffd13b;
+    border-radius: 5px;
+}
+
+.attention a {
+    color: #52c5ff;
+}
+
+.attention a:hover {
+    text-decoration: underline;
 }
 
 .text {
@@ -123,15 +141,15 @@ a, button {
     background-color: #1E532E;
 }
 
-.btn-yoomoney {
-    background-color: #8b3ffd;
+.btn-donate {
+    background-color: #FF8C00;
 }
-.btn-yoomoney:hover {
-    background-color: #7034ca;
+.btn-donate:hover {
+    background-color: #da7801;
 }
 
-.btn-yoomoney:active {
-    background-color: #56279c;
+.btn-donate:active {
+    background-color: #b46300;
 }
 
 .btn-git {
@@ -183,39 +201,19 @@ a, button {
     margin-right: 7px;
 }
 
-.projects {
-    margin: 15px 0;
+.info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.project {
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: var(--server-color);
-    width: 300px;
-
-    margin: 10px;
+.info-group {
+    display: flex;
+    margin: 5px 0;
 }
 
-.project-logo {
-    width: 100px; 
-    border-radius: 100%;
-}
-
-.project-title {
-    margin: 10px 0;
-    font-size: 25px;
-    color: #5865F2;
-    font-family: "Ginto";
-}
-
-.project a {
-    text-align: center;
-    margin: 10px auto;
+.info-group code {
+    margin-left: 5px;
+    color: #52c5ff;
 }
 
 @media (max-width: 1070px) {
@@ -278,7 +276,7 @@ footer a:hover {
 
 ::-webkit-scrollbar {
     background-color: var(--background-color);
-    width: 17px;
+    width: 15px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #5865F2;
@@ -301,4 +299,12 @@ footer a:hover {
     text-align: center;
     border-radius: 10px;
     background-color: var(--server-color);
+}
+
+@media (max-width:725px) {
+    .info, .info-column {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
