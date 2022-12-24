@@ -1,7 +1,7 @@
 Vue.createApp({
     data() {
         return {
-            main: '<img src="https://media.discordapp.net/attachments/955380182238261281/1023594406563020930/Frame_4.png" alt="" class="greeting-emoji"><div class="greeting-text" id="greeting-text">Hi, I am <b class="greeting-b">flyarrree</b></div>',
+            main: '<img src="https://media.discordapp.net/attachments/955380182238261281/1023594406563020930/Frame_4.png" alt="" class="greeting-emoji"><div class="greeting-text"><b class="greeting-b" id="greeting-text">flyarrree</b><div class="greeting-value">happy new year! ⛄</div></div>',
             theme: "black",
             themeIcon: '<i class="fa-solid fa-sun"></i>'
         }
@@ -9,7 +9,7 @@ Vue.createApp({
     methods: {
         returnGif() {
             let greeting = document.getElementById("greeting-text")
-            if (greeting.innerText == "Hi, I am flyarrree") {
+            if (greeting.innerText == "flyarrree") {
                 this.main = '<img class="vay-ogo" src="https://c.tenor.com/e1HuI8meyEMAAAAC/лядов-вау.gif">'
             }
     }, 
